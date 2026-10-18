@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+models/
+*.npz
+config.json
+llm_api_key
+.DS_Store

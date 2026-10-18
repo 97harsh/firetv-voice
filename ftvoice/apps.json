@@ -1,0 +1,17 @@
+{
+  "_comment": "name -> package, launch activity, spoken aliases, search deep link ({q} = URL-encoded query). Apps without 'search' just open. 'default_search' is used for 'search for X' with no app named. Edit, then run: ftv reload",
+  "_default_search": "prime video",
+  "netflix":     {"package": "com.netflix.ninja", "activity": "com.netflix.ninja/.MainActivity", "aliases": ["netflix", "net flix"], "search": {"type": "uri", "uri": "nflx://www.netflix.com/search?q={q}"}},
+  "hulu":        {"package": "com.hulu.plus", "activity": "com.hulu.plus/.SplashActivity", "aliases": ["hulu", "who lou", "hulu plus"], "search": {"type": "uri", "uri": "https://www.hulu.com/search?q={q}"}},
+  "apple tv":    {"package": "com.apple.atve.amazon.appletv", "activity": "com.apple.atve.amazon.appletv/.MainActivity", "aliases": ["apple tv", "apple tv plus", "apple t v", "apple"], "search": {"type": "uri", "uri": "https://tv.apple.com/search?searchParam={q}"}},
+  "prime video": {"package": "com.amazon.firebat", "activity": "com.amazon.firebat/com.amazon.firebatcore.deeplink.DeepLinkRoutingActivity", "aliases": ["prime video", "prime", "amazon prime", "amazon video", "prime tv"], "search": {"type": "uri", "uri": "amzn://avod/search?phrase={q}"}},
+  "youtube":     {"package": "com.amazon.firetv.youtube", "activity": "com.amazon.firetv.youtube/dev.cobalt.app.MainActivity", "aliases": ["youtube", "you tube"], "search": {"type": "uri", "uri": "https://www.youtube.com/results?search_query={q}"}},
+  "disney plus": {"package": "com.disney.disneyplus", "activity": "com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity", "aliases": ["disney plus", "disney", "disney+"], "search": {"type": "uri", "uri": "https://www.disneyplus.com/search?q={q}"}},
+  "hbo max":     {"package": "com.hbo.hbonow", "activity": "com.hbo.hbonow/com.wbd.beam.BeamActivity", "aliases": ["hbo max", "hbo", "max", "h b o"], "search": {"type": "uri", "uri": "https://play.hbomax.com/search?q={q}"}},
+  "peacock":     {"package": "com.peacock.peacockfiretv", "activity": "com.peacock.peacockfiretv/com.peacock.peacocktv.AmazonMainActivity", "aliases": ["peacock", "peacock tv"]},
+  "spotify":     {"package": "com.spotify.tv.android", "activity": "com.spotify.tv.android/.SpotifyTVActivity", "aliases": ["spotify"], "search": {"type": "uri", "uri": "spotify:search:{q}"}},
+  "tubi":        {"package": "com.tubitv.ott", "activity": "com.tubitv.ott/com.tubitv.activities.FireTVMainActivity", "aliases": ["tubi", "tubi tv", "to be", "tuby", "tubby", "2b"], "search": {"type": "uri", "uri": "https://tubitv.com/search/{q}"}},
+  "pluto tv":    {"package": "tv.pluto.android", "activity": "tv.pluto.android/com.paramount.android.pplus.features.splash.tv.SplashMediatorActivity", "aliases": ["pluto", "pluto tv"]},
+  "steam link":  {"package": "com.valvesoftware.steamlink", "activity": "com.valvesoftware.steamlink/.SteamShellActivity", "aliases": ["steam link", "steam"]},
+  "settings":    {"package": "com.amazon.tv.settings.v2", "aliases": ["settings", "tv settings"]}
+}
